@@ -1,0 +1,8 @@
+.shade {
+    height: 7.4rem;
+    background-image: linear-gradient(180deg,transparent,rgba(1,1,1,.50),#111);
+    width: 1366px;
+    position: absolute;
+    left: -30px;
+    top: 243px;
+}

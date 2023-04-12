@@ -11,7 +11,7 @@ function Offer() {
     const isMedium = useMediaQuery('(min-width : 1024px)')
     if(isMedium){
         return (
-            <div className=' pt-20 pb-10 flex gap-20 w-[1250px] min-h-60 h-auto  mx-auto '>
+            <div className=' pt-20 pb-10 flex gap-20 w-[1150px] min-h-60 h-auto  mx-auto '>
                 <div className=' w-[400px] h-[650px] rounded-2xl relative'>
                     <img className=' w-full h-full object-cover rounded-2xl' src={parachute} alt="" />
                     <img className='absolute top-[-30px] left-10' src={parachuteOne} alt="" width={180} />

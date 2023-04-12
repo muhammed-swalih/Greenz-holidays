@@ -75,8 +75,8 @@ function Footer() {
                 <div className=' w-[1300px] mx-auto flex justify-between mt-1 pb-10'>
                     <h1 className=' text-sm text-gray-400'>Privacy Policy</h1>
                     <div className=' flex flex-col gap-1'>
-                        <h1 className=' uppercase text-gray-400 font-thin text-xs'>designed by</h1>
-                        <h1 className=' uppercase text-xl text-white tracking-widest'>hexen</h1>
+                        <h1 className=' uppercase text-gray-400 font-thin text-xs'>developed by</h1>
+                        <h1 className=' uppercase text-2xl text-white tracking-widest'>hexen</h1>
                     </div>
                 </div>
             </div>
