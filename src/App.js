@@ -12,17 +12,19 @@ import PassportPage from "./pages/PassportPage";
 import AttestationPage from "./pages/AttestationPage";
 import EmigrationPage from "./pages/EmigrationPage";
 import TicketPage from "./pages/TicketPage";
+import DataProvider from "./DataProvider";
+import Navbar from "./Components/Navbar";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/" element={<DataProvider><Homepage /></DataProvider>} />
           <Route path="/aboutus" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/packages" element={<PackagePage />} />
-          <Route path="/packagedetails" element={<SinglePage />} />
+          <Route path="/packages" element={<DataProvider><PackagePage /></DataProvider>} />
+          <Route path="/packagedetails/:id" element={<SinglePage />} />
           <Route path="/airticketing" element={<AirTicketingPage />} />
           <Route path="/visitingvisa" element={<VisitingVisaPage />} />
           <Route path="/visastamping" element={<VisaStampingPage />} />
@@ -31,6 +33,7 @@ function App() {
           <Route path="/attestation" element={<AttestationPage />} />
           <Route path="/emigration" element={<EmigrationPage />} />
           <Route path="/tickets" element={<TicketPage />} />
+          <Route path="/navbar" element={<Navbar />} />
         </Routes>
       </BrowserRouter>
 
