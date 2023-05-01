@@ -1,10 +1,25 @@
-import React, { useState } from 'react'
-import { CgMenuRight } from 'react-icons/cg'
-import logo from '../mobile Assets/HOMEPAGE/flygreenz~1.webp'
+import React, { useEffect, useState } from 'react'
 import { useMediaQuery } from '@react-hook/media-query'
-import { FaWhatsapp, FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
-function Navbar() {
+import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa';
+import { CgMenuRight } from 'react-icons/cg';
+import logo from '../mobile Assets/HOMEPAGE/flygreenz~1.webp'
+function HomeNavbar() {
+  const medium = useMediaQuery('(min-width : 1024px)')
+  const [nav, setNav] = useState(false)
+  const navBarTransition = () => {
+    if (window.scrollY > 100) {
+      setNav(true)
+    } else {
+      setNav(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', navBarTransition)
+    return () => window.removeEventListener('scroll', navBarTransition);
+  }, [])
+
   const navigate = useNavigate();
 
   const navigateHome = () => {
@@ -24,35 +39,34 @@ function Navbar() {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   }
-  const isMedium = useMediaQuery('(min-width : 1024px)')
-  if (isMedium) {
+  if (medium) {
     return (
-      <div className={' w-full h-auto flex justify-between text-white px-5 pt-5  items-center fixed z-10'}>
-        <div className=' font-semibold'>
-          <img src={logo} alt="" width={160} />
-        </div>
-        <div>
-          <ul className=' flex gap-5 '>
-            <li className=' ml-3 text-xl font-medium '>Home</li>
-            <li className=' ml-3 text-xl font-medium '>services</li>
-            <li className=' ml-3 text-xl font-medium '>Tour Packages</li>
-            <li className=' ml-3 text-xl font-medium '>About</li>
-          </ul>
-        </div>
-        <div>
-          <h1>hello</h1>
-        </div>
+      <div className={nav ? ' w-full h-auto flex justify-between  px-5 py-2 text-black  items-center fixed z-10 bg-white' : 'w-full h-auto flex justify-between text-white px-5 pt-5  items-center fixed z-10'}>
+      <div className=' font-semibold'>
+        <img src={logo} alt="" width={160} />
       </div>
+      <div>
+        <ul className=' flex gap-5 '>
+          <li onClick={navigateHome} className=' ml-3 text-xl font-medium '>Home</li>
+          <li onClick={packages} className=' ml-3 text-xl font-medium '>Tour Packages</li>
+          <li onClick={aboutus} className=' ml-3 text-xl font-medium '>About</li>
+          <li onClick={contact} className=' ml-3 text-xl font-medium '>Contact</li>
+        </ul>
+      </div>
+   <div>
+
+   </div>
+    </div>
     )
   }
   return (
-    <div className='w-full px-5 h-24'>
-      <div className='h-full flex justify-between'>
+    <div className={nav ? 'w-full h-20 fixed z-10 bg-white' : 'w-full h-24 fixed z-10'}>
+      <div className='h-full flex justify-between px-5'>
         <div onClick={navigateHome} className='flex items-center h-full'>
-          <img src={logo} alt="" width={100} />
+          <img src={logo} alt="" width={110} />
         </div>
         <div className='h-full flex items-center'>
-          <h1 className='text-4xl' onClick={toggleSidebar}><CgMenuRight /></h1>
+          <h1 className={nav ? 'text-4xl' : "text-white text-4xl"} onClick={toggleSidebar}><CgMenuRight /></h1>
         </div>
       </div>
 
@@ -76,4 +90,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default HomeNavbar

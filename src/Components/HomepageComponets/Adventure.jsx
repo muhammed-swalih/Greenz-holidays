@@ -7,16 +7,10 @@ import adThree from '../../greenz webp assets/ad3.webp'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 import axios from 'axios'
 import DataContext from '../../DataContext'
+import newmap from '../../NEW ASSETS/MOBILE HOMEPAGE/MAPBG.webp'
+import newBg from '../../FINSLE ASSETS/ad-bg.webp'
 function Adventure() {
-    // const [ads, setAds] = useState([]);
-    // const getAds = async () => {
-    //     const response = await axios('http://localhost:3001/packages/getAd');
-    //     setAds(response.data)
-    //     console.log(response.data);
-    // }
-    // useEffect(() => {
-    //     getAds();
-    // }, [])
+
 
     const { ads } = useContext(DataContext)
     const handleNextImage = () => {
@@ -37,7 +31,7 @@ function Adventure() {
                                 String.fromCharCode(...new Uint32Array((items.image.data.data)))
                             )
                             return (
-                                <div className='flex-shrink-0 w-[300px] h-[350px] bg-black border border-8 border-white '>
+                                <div className='flex-shrink-0 w-[400px] h-[400px] bg-black  '>
                                     <img className=' w-full h-full object-cover' src={`data:image/jpeg;base64,${base64String}`} alt="" />
                                 </div>
                             )
@@ -54,7 +48,7 @@ function Adventure() {
     return (
         <div className=' mt-10 w-full h-auto'>
             <h1 className='my-text text-gray-400 text-center text-2xl'>adventure awaits</h1>
-            <div className='w-full min-h-screen h-auto bg-cover bg-fixed' style={{ backgroundImage: `url(${map})` }}>
+            <div className='w-full min-h-screen h-auto bg-cover bg-fixed' style={{ backgroundImage: `url(${newBg})` }}>
                 <div className=' py-5 flex flex-col justify-center gap-5'>
                     {ads.map((items) => {
                         const base64String = btoa(
@@ -62,8 +56,8 @@ function Adventure() {
                         )
                         return (
 
-                            <div className=' w-80 h-96 bg-black mx-auto rounded-3xl border border-4 border-white'>
-                                    <img className=' w-full h-full object-cover rounded-3xl' src={`data:image/jpeg;base64,${base64String}`} alt="" />
+                            <div className='  bg-black mx-auto rounded-3xl '>
+                                    <img className=' w-80 h-80 object-cover rounded-3xl' src={`data:image/jpeg;base64,${base64String}`} alt="" />
                             </div>
                         )
                     })}

@@ -14,6 +14,7 @@ import EmigrationPage from "./pages/EmigrationPage";
 import TicketPage from "./pages/TicketPage";
 import DataProvider from "./DataProvider";
 import Navbar from "./Components/Navbar";
+import HomeNavbar from "./Components/HomeNavbar";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/emigration" element={<EmigrationPage />} />
           <Route path="/tickets" element={<TicketPage />} />
           <Route path="/navbar" element={<Navbar />} />
+          <Route path="/homenavbar" element={<HomeNavbar />} />
         </Routes>
       </BrowserRouter>
 

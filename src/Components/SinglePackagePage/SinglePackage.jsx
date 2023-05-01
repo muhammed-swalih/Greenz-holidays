@@ -36,7 +36,7 @@ function SinglePackage() {
     const isMedium = useMediaQuery('(min-width : 1024px)')
     if (isMedium) {
         return (
-            <div className=' w-full min-h-screen h-auto'>
+            <div className=' w-full min-h-screen h-auto my-font'>
                 <div className=' w-full min-h-80 h-96 bg-center bg-black  bg-cover ' style={{ backgroundImage: `url(${`data:image/jpeg;base64,${base}`})` }}>
                     <div className=' w-full h-96 bg-gradient-to-t from-gray-900  '>
                         <div className=' w-[1150px] h-96 mx-auto flex items-end pb-5 '>
@@ -109,7 +109,7 @@ function SinglePackage() {
         )
     }
     return (
-        <div className=' w-full '>
+        <div className=' w-full my-font'>
             <Navbar />
             <div className=' relative w-full h-60 bg-cover ' style={{ backgroundImage: `url(${`data:image/jpeg;base64,${base}`})` }}>
                 <div className='w-full h-60 bg-gradient-to-t from-gray-900'>
@@ -157,7 +157,7 @@ function SinglePackage() {
                 </div>
                 <hr className=' border border-1 border-gray-700 w-full mt-5' />
                 <div className=' mt-5'>
-                    <h1 className='text-black text-sm'>{details ? details.description : ""}</h1>
+                    <h1 className='text-black text-sm font-semibold'>{details ? details.description : ""}</h1>
                 </div>
 
             </div>

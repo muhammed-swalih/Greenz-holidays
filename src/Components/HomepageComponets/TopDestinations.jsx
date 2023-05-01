@@ -6,12 +6,17 @@ import imgOne from '../../DESKTOP/HOMEPAGE/TOP DESITINATION_1.webp'
 import imgTwo from '../../DESKTOP/HOMEPAGE/TOP DESITINATION_2.webp'
 import imgThree from '../../DESKTOP/HOMEPAGE/TOP DESITINATION_3.webp'
 import imgFour from '../../DESKTOP/HOMEPAGE/TOP DESITINATION_4.webp'
-
+import newio from '../../NEW ASSETS/MOBILE HOMEPAGE/Group 8.webp'
+import newit from '../../NEW ASSETS/MOBILE HOMEPAGE/Maldives.webp'
+import newith from '../../NEW ASSETS/MOBILE HOMEPAGE/Group 10.webp'
+import newif from '../../NEW ASSETS/MOBILE HOMEPAGE/russia.webp'
+import newifi from '../../NEW ASSETS/MOBILE HOMEPAGE/rio.webp'
+import newRio from '../../FINSLE ASSETS/rio.webp'
 function TopDestinations() {
     const isMedium = useMediaQuery('(min-width : 1024px)');
     if (isMedium) {
         return (
-            <div className=' w-[1350px] px-20 mx-auto  min-h-60 h-auto py-20'>
+            <div className=' w-[1350px] px-20 mx-auto  min-h-60 h-auto py-20 my-font'>
                 <div className=' flex flex-col '>
                     <div className=' flex justify-between'>
                         <div>
@@ -63,7 +68,7 @@ function TopDestinations() {
         )
     }
     return (
-        <div className=' w-full h-auto  my-10 px-5'>
+        <div className=' w-full h-auto  my-10 mt-20 px-5 my-font'>
             
             <div className=' flex flex-col gap-4 '>
                 <div className=' flex justify-center gap-28  items-center'>
@@ -71,36 +76,26 @@ function TopDestinations() {
                     <img src={parachute} alt="" width={100}/>
                 </div>    
                 <div className=' flex justify-center gap-4 '>
-                    <div className=' w-36 h-auto rounded-2xl relative'>
-                        <img className=' w-full h-full object-cover rounded-2xl' src={galleryImage} alt="" />
-                        <h1 className=' absolute top-[245px] my-text text-white left-2 tracking-wider text-xl'>fary</h1>
-                        <h1 className=' absolute top-[270px] my-text text-white text-xs tracking-wider left-2 '>waterfall</h1>
+                    <div className='  rounded-2xl relative'>
+                        <img className=' w-36 h-auto object-cover rounded-2xl' src={newio} alt="" />
                     </div>
                     <div className=' flex flex-col gap-4 '>
-                        <div className=' w-44 h-36  rounded-2xl relative'>
-                            <img className=' w-full h-full object-cover rounded-2xl' src={imgOne} alt="" />
-                            <h1 className=' absolute  text-white my-text left-2 text-xl top-[90px]'>maldives</h1>
-                            <h1 className=' absolute text-white my-text left-2 text-xs top-[115px]'>beach</h1>
-
+                        <div className='   rounded-2xl relative'>
+                            <img className=' w-52 h-36 object-cover rounded-2xl' src={newit} alt="" />
                         </div>
-                        <div className=' w-44 h-36  rounded-2xl  relative'>
-                            <img className=' w-full h-full object-cover rounded-2xl' src={imgTwo} alt="" />
-                            <h1 className=' absolute  text-white my-text left-2 text-xl top-[90px]'>kashmir</h1>
-                            <h1 className=' absolute text-white my-text left-2 text-xs top-[115px]'>beach</h1>
+                        <div className='   rounded-2xl  relative'>
+                            <img className=' w-52 h-36 object-cover rounded-2xl' src={newith} alt="" />
                         </div>
                     </div>
                 </div>
 
                 <div className=' flex justify-center gap-4 relative'>
-                    <div className=' w-52 h-36  rounded-2xl relative'>
-                        <img className=' w-full h-full object-cover rounded-2xl' src={imgThree} alt="" />
-                        <h1 className=' absolute  text-white my-text left-2 text-xl top-[90px]'>russia</h1>
-                        <h1 className=' absolute text-white my-text left-2 text-xs top-[115px]'>beach</h1>
+                    <div className='   rounded-2xl relative'>
+                        <img className=' w-60 h-36 object-cover rounded-2xl' src={newif} alt="" />
                     </div>
-                    <div className=' w-28 h-36  rounded-2xl relative'>
-                        <img className=' w-full h-full rounded-2xl object-cover' src={imgFour} alt="" />
-                        <h1 className=' absolute  text-white my-text left-2 text-xl top-[90px]'>Rio</h1>
-                        <h1 className=' absolute text-white my-text left-2 text-xs top-[115px]'>beach</h1>
+                    <div className='  rounded-2xl relative'>
+                        <img className=' w-28 h-36  rounded-2xl object-cover' src={newRio} alt="" />
+
                     </div>
                 </div>
             </div>

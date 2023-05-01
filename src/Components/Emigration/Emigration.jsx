@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useMediaQuery } from '@react-hook/media-query'
 import bg from '../../DESKTOP/emigration.webp'
 import { FaWhatsapp } from 'react-icons/fa'
@@ -6,12 +6,19 @@ import { BiPhoneCall } from 'react-icons/bi'
 import { HiMail } from 'react-icons/hi'
 import Footer from '../HomepageComponets/Footer'
 import Navbar from '../Navbar'
+import HomeNavbar from '../HomeNavbar'
+import newbg from '../../NEW ASSETS/MOBILE OTHER PAGES/emigartion.webp'
+
 function Emigration() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     const isMedium = useMediaQuery('(min-width  : 1024px)')
     if (isMedium) {
         return (
-            <div className=' w-full min-h-screen h-auto'>
-                <div className=' w-full h-60 bg-cover bg-black ' style={{ backgroundImage: `url(${bg})` }}>
+            <div className=' w-full min-h-screen h-auto my-font'>
+                <div className=' w-full h-60 bg-cover bg-black ' style={{ backgroundImage: `url(${newbg})` }}>
+                    <HomeNavbar/>
                     <div className=' w-full h-60 bg-gradient-to-t from-gray-900'>
                         <div className=' w-[1150px] h-full mx-auto pb-5 flex items-end'>
                             <h1 className='my-text text-white text-4xl tracking-widest'>Emigration</h1>
@@ -21,7 +28,7 @@ function Emigration() {
                 <div className=' w-[1150px] h-auto flex mx-auto justify-between my-10'>
                     <div className=''>
                         <h1 className=' uppercase font-bold text-black text-lg'>Emigration service</h1>
-                        <h1 className=' text-black text-sm w-[550px] font-medium mt-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        <h1 className=' text-black text-lg w-[600px] font-medium mt-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                             Why do we use it?
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected </h1>
                     </div>
@@ -56,7 +63,7 @@ function Emigration() {
         )
     }
     return (
-        <div className=' w-full '>
+        <div className=' w-full my-font'>
             <Navbar />
             <div className='w-full  h-36 bg-cover' style={{ backgroundImage: `url(${bg})` }}>
                 <div className=' w-full  flex justify-center items-center h-36 bg-gradient-to-t from-gray-900'>
@@ -66,7 +73,7 @@ function Emigration() {
             <div className=' my-10 px-5'>
                 <div className=' flex flex-col gap-2'>
                     <h1 className=' uppercase font-bold text-2xl'>emigration service</h1>
-                    <h1 className=' text-xs font-semibold'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    <h1 className=' text-sm font-semibold'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         Why do we use it?
 
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected </h1>

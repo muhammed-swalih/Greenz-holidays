@@ -8,12 +8,15 @@ import Footer from '../HomepageComponets/Footer'
 import location from '../../DESKTOP/Contact us/location_icon.webp'
 import { useMediaQuery } from '@react-hook/media-query'
 import Navbar from '../Navbar'
+import HomeNavbar from '../HomeNavbar'
+import newbg from '../../NEW ASSETS/MOBILE OTHER PAGES/contact.webp'
 function Cotnact() {
     const isMedium = useMediaQuery('(min-width : 1024px)')
     if (isMedium) {
         return (
-            <div className=' w-full min-h-screen h-auto'>
-                <div className=' w-full h-60 bg-black bg-cover' style={{ backgroundImage: `url(${bg})` }}>
+            <div className=' w-full min-h-screen h-auto my-font'>
+                <div className=' w-full h-80 bg-black bg-cover' style={{ backgroundImage: `url(${newbg})` }}>
+                    <HomeNavbar/>
                     <div className=' w-[1150px] h-full mx-auto flex justify-center items-center'>
                         <h1 className=' my-text text-white tracking-widest text-4xl'>contact us</h1>
                     </div>
@@ -88,7 +91,7 @@ function Cotnact() {
         )
     }
     return (
-        <div className=' w-full h-auto'>
+        <div className=' w-full h-auto my-font'>
             <Navbar />
             <div className=' w-full h-48 bg-cover flex justify-center items-center' style={{ backgroundImage: `url(${bg})` }} >
                 <h1 className=' my-text text-4xl text-white tracking-wider'>contact us</h1>
@@ -101,7 +104,7 @@ function Cotnact() {
                             is always here to chat.</h1>
                     </div>
 
-                    <div className=' mt-8 flex flex-col gap-5'>
+                    <div className=' mt-8 flex flex-col gap-5 font-medium'>
                         <div className=' flex flex-col gap-1'>
                             <div className=' flex gap-2 items-center'>
                                 <img src={phone} alt="" />
