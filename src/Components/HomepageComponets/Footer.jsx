@@ -61,9 +61,9 @@ function Footer() {
                         </div>
                         <div className=' flex flex-col gap-5'>
                             <div>
-                                <h1 className=' my-text tracking-widest text-white'>about</h1>
+                                <h1 className=' my-font uppercase text-2xl font-semibold tracking-widest text-white'>about</h1>
                             </div>
-                            <div className=' text-white'>
+                            <div className=' text-white text-sm'>
                                 <h1 onClick={navigateHome}>Home</h1>
                                 <h1 onClick={packages}>Packages</h1>
                                 <h1 onClick={aboutus}>About Us</h1>
@@ -72,9 +72,9 @@ function Footer() {
                         </div>
                         <div className=' flex flex-col gap-5'>
                             <div>
-                                <h1 className=' my-text tracking-widest text-white'>services</h1>
+                                <h1 className=' my-font uppercase text-2xl font-semibold tracking-widest text-white'>services</h1>
                             </div>
-                            <div className=' text-white'>
+                            <div className=' text-white text-sm'>
                                 <h1 onClick={AirTicketing}>Air Ticketing</h1>
                                 <h1 onClick={visitingVisa}>Visiting Visa</h1>
                                 <h1 onClick={packages}>Tour Packages</h1>
@@ -88,19 +88,19 @@ function Footer() {
                         </div>
                         <div className=' flex flex-col gap-5'>
                             <div>
-                                <h1 className=' my-text tracking-widest text-white'>Headquarters</h1>
+                                <h1 className=' my-font uppercase text-2xl font-semibold tracking-widest text-white'>Headquarters</h1>
                             </div>
-                            <div className=' text-white'>
+                            <div className=' text-white text-sm'>
                                 <h1 className=' w-[300px]'>FLY GREENZ HOLIDAYS NMS Tower, Firs Floor,Kozhikode Road,Near Icici Bank,Valanchery,Kearala,India-676552</h1>
                             </div>
-                            <div className=' flex gap-3'>
+                            <div className=' flex gap-3 text-sm'>
                                 <img src={phone} alt="" width={50} />
                                 <div className='  text-white'>
                                     <h1>9846075785</h1>
                                     <h1>9846075786</h1>
                                 </div>
                             </div>
-                            <div className=' flex gap-3'>
+                            <div className=' flex gap-3 text-sm'>
                                 <img src={mail} alt="" width={30} />
                                 <h1 className=' text-white'>flygreenzholidays@gmail.com</h1>
                             </div>
@@ -113,7 +113,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className=' pt-16'>
+                <div className=' pt-'>
 
                     <hr className='border border-1 border-slate-800 w-[1300px] mx-auto' />
                 </div>
@@ -128,24 +128,22 @@ function Footer() {
         )
     }
     return (
-        <div className=' w-full h-auto bg-black px-5 py-2 my-font'>
+        <div className=' w-full h-auto bg-slate-900 px-5 py-2 my-font'>
 
             <div className=' mb-5'>
                 <div className='flex justify-center mt-10 mb-1'>
                     <img src={logo} alt="" width={150} />
                 </div>
                 <div className=' flex gap-4 items-center mt-10'>
-                    <h1 className=' text-gray-800 text-5xl'><BsFillBuildingsFill /></h1>
+                    <h1 className=' text-white text-5xl'>< HiLocationMarker /></h1>
                     <h1 className='my-text text-white text-xl tracking-wider'>headquarters</h1>
                 </div>
 
                 <div className=' flex flex-col gap-5 my-5'>
-                    <div className=' flex gap-5'>
-                        <h1 className=' text-white text-3xl'><HiLocationMarker /></h1>
+                    <div className=' flex gap-5 justify-center px-5'>
                         <h1 className=' text-white'>FLY GREENZ HOLIDAYS NMS Tower, Firs Floor,Kozhikode Road,Near Icici Bank,Valanchery,Kearala,India-676552</h1>
                     </div>
-                    <div className=' flex gap-5'>
-                        <h1 className=' text-white text-3xl'><HiLocationMarker /></h1>
+                    <div className=' flex gap-5 px-5'>
                         <h1 className=' text-white'>Palara Building, 1st Floor,Perinthalmanna Road, Valanchery, Malappuram 676 552</h1>
                     </div>
                     <div className=' flex gap-5'>

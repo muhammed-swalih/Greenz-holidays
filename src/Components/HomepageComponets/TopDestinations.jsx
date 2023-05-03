@@ -11,6 +11,7 @@ import newit from '../../NEW ASSETS/MOBILE HOMEPAGE/Maldives.webp'
 import newith from '../../NEW ASSETS/MOBILE HOMEPAGE/Group 10.webp'
 import newif from '../../NEW ASSETS/MOBILE HOMEPAGE/russia.webp'
 import newifi from '../../NEW ASSETS/MOBILE HOMEPAGE/rio.webp'
+import bgmap from '../../NEW ASSETS/MOBILE HOMEPAGE/MAPBG.webp'
 import newRio from '../../FINSLE ASSETS/rio.webp'
 function TopDestinations() {
     const isMedium = useMediaQuery('(min-width : 1024px)');
@@ -20,11 +21,11 @@ function TopDestinations() {
                 <div className=' flex flex-col '>
                     <div className=' flex justify-between'>
                         <div>
-                            <h1 className=' my-text tracking-wider text-4xl'>top destination</h1>
-                            <h1 className=' font-semibold mt-5 w-[800px] uppercase'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h1>
+                            <h1 className=' my-font uppercase font-bold tracking-wider text-4xl'>top destination</h1>
+                            <h1 className=' text-sm font-semibold mt-5 w-[810px] uppercase'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with.</h1>
                         </div>
-                        <div>
-                            <img src={parachute} alt="" width={300} />
+                        <div className=' bg-cover w-auto h-auto'style={{backgroundImage:`url(${bgmap})`}}>
+                            <img src={parachute} alt="" width={200} />
                         </div>
                     </div>
                     <div className=' flex  gap-5 justify-center '>
@@ -68,16 +69,16 @@ function TopDestinations() {
         )
     }
     return (
-        <div className=' w-full h-auto  my-10 mt-20 px-5 my-font'>
+        <div className=' w-full h-auto  my-10 mt-20 px-5 my-font bg-cover bg-top' style={{backgroundImage : `url(${bgmap})`}}>
             
             <div className=' flex flex-col gap-4 '>
-                <div className=' flex justify-center gap-28  items-center'>
+                <div className=' flex justify-between w-full  items-center'>
                     <h1 className=' my-text text-2xl w-32 '>top destination</h1>
-                    <img src={parachute} alt="" width={100}/>
+                    <img src={parachute} alt="" width={80}/>
                 </div>    
                 <div className=' flex justify-center gap-4 '>
-                    <div className='  rounded-2xl relative'>
-                        <img className=' w-36 h-auto object-cover rounded-2xl' src={newio} alt="" />
+                    <div className='  rounded-2xl relative '>
+                        <img className=' w-36 h-[310px] object-cover rounded-2xl' src={newio} alt="" />
                     </div>
                     <div className=' flex flex-col gap-4 '>
                         <div className='   rounded-2xl relative'>

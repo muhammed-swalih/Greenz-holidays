@@ -33,10 +33,10 @@ function Navbar() {
         </div>
         <div>
           <ul className=' flex gap-5 '>
-            <li className=' ml-3 text-xl font-medium '>Home</li>
-            <li className=' ml-3 text-xl font-medium '>services</li>
-            <li className=' ml-3 text-xl font-medium '>Tour Packages</li>
-            <li className=' ml-3 text-xl font-medium '>About</li>
+            <li className=' ml-3 text-xl font-medium uppercase'>Home</li>
+            <li className=' ml-3 text-xl font-medium uppercase'>services</li>
+            <li className=' ml-3 text-xl font-medium uppercase'>Tour Packages</li>
+            <li className=' ml-3 text-xl font-medium uppercase'>About</li>
           </ul>
         </div>
         <div>
@@ -45,6 +45,7 @@ function Navbar() {
       </div>
     )
   }
+
   return (
     <div className='w-full px-5 h-24'>
       <div className='h-full flex justify-between'>

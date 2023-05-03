@@ -16,9 +16,11 @@ function Cotnact() {
         return (
             <div className=' w-full min-h-screen h-auto my-font'>
                 <div className=' w-full h-80 bg-black bg-cover' style={{ backgroundImage: `url(${newbg})` }}>
+                    <div className=' bg-gradient-to-b from-white h-80'>
                     <HomeNavbar/>
                     <div className=' w-[1150px] h-full mx-auto flex justify-center items-center'>
-                        <h1 className=' my-text text-white tracking-widest text-4xl'>contact us</h1>
+                        <h1 className=' my-font text-black uppercase tracking-widest font-semibold text-6xl'>contact us</h1>
+                    </div>
                     </div>
                 </div>
                 <div className=' w-full flex  h-auto'>
@@ -31,7 +33,7 @@ function Cotnact() {
                                     is always here to chat.
                                 </h1>
                             </div>
-                            <div className=''>
+                            <div className=' ml-24'>
                                 <div className=' flex gap-3'>
                                     <div>
                                         <img src={msg} alt="" width={50} />
@@ -47,7 +49,7 @@ function Cotnact() {
                                     </div>
                                 </div>
                             </div>
-                            <div className=''>
+                            <div className='ml-10'>
                                 <div className=' flex gap-3'>
                                     <div>
                                         <img src={location} alt="" width={50} />
@@ -63,7 +65,7 @@ function Cotnact() {
                                     </div>
                                 </div>
                             </div>
-                            <div className=''>
+                            <div className='ml-10'>
                                 <div className=' flex gap-3'>
                                     <div>
                                         <img src={phone} alt="" width={50} />

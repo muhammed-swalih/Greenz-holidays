@@ -11,9 +11,9 @@ import '../styles/scrollbar.css'
 import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
 import HomeNavbar from '../HomeNavbar'
-import newbg from '../../NEW ASSETS/MOBILE HOMEPAGE/bg.webp'
+import newbg from '../../FINSLE ASSETS/cutbg.webp'
 import 'typeface-poppins'
-import newdeskbg  from '../../NEW ASSETS/bgdesk.webp' 
+import newdeskbg from '../../NEW ASSETS/bgdesk.webp'
 import Navbar from '../Navbar'
 function Intro() {
     const navigate = useNavigate();
@@ -27,7 +27,7 @@ function Intro() {
         navigate('/contact')
     }
     const packages = () => {
-        navigate('/packages')
+    navigate('/packages')
     }
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -43,48 +43,49 @@ function Intro() {
     const isMedium = useMediaQuery('(min-width : 1024px)')
     if (isMedium) {
         return (
-            <div className=' w-full h-auto  flex  items-center my-font'>
+            <div className=' w-full h-auto flex items-center my-font'>
 
-                <div className=' w-full min-h-screen h-auto bg-cover   ' style={{ backgroundImage: `url(${newdeskbg})` }}>
-                    <div className=' bg-gradient-to-t from-gray-900 flex '>
-                    <HomeNavbar/>
-                    <div className=' flex items-center w-5/6 min-h-screen h-auto mx-auto'>
-                        <div className=' flex items-center'>
-                            <div className='text-white  w-[1250px] min-h-60 h-60  mx-auto'>
-                                <h1 className=' font-bold my-text   text-5xl tracking-widest w-[800px] leading-[60px]'>You Can Give Us a
-                                    Tour To Remember
-                                    Forever</h1>
-                                <div className=' flex justify-between w-[1250px] mt-4 gap-0 h-60 '>
-                                    <div className=' text-gray-100 w-[800px]'>
-                                        <h1 className=' font-medium text-xl'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h1>
+                <div className=' w-full min-h-screen h-auto bg-cover bg-fixed ' style={{ backgroundImage: `url(${newdeskbg})` }}>
+                    <div className='  bg-gradient-to-b from-white '>
+                        <HomeNavbar />
+                        <div className=' flex items-center w-5/6 min-h-screen h-auto mx-auto'>
+                            <div className=' flex items-center'>
+                                <div className='text-black  w-[1250px] min-h-60 h-60  mx-auto'>
+                                    <h1 className=' font-semibold my-font   text-5xl   tracking-wide w-[700px] leading-[60px] uppercase '>You can give us a
+                                        tour to remember
+                                        forever</h1>
+                                    <div className=' flex justify-between w-[1250px] mt-4 gap-0 h-60 '>
+                                        <div className=' text-black w-[600px]'>
+                                            <h1 className='  text-sm'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</h1>
+                                            <div className='   mt-4 text-black   w-48 border border-2 border-white h-16 hover:bg-white cursor-pointer hover:text-black  '>
+                                                <div className='flex justify-center items-center bg-white bg-opacity-30 h-full w-full hover:bg-white'>
+                                                     <h1 className='uppercase text-xl  '>book a tour</h1>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                               
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
         )
     }
     return (
-        <div className=' w-full min-h-screen h-auto bg-cover   bg-fixed ' style={{ backgroundImage: `url(${newbg})` }}>
-            <div className=' bg-gradient-to-t from-black flex'>
-
-            <div className=' '>     
-            <HomeNavbar/>
-            <div className='  mx-auto h-screen pt-40 '>
-                <div className=' mx-auto'>
-                    <h1 className=' tracking-widest w-80 font-light    mx-7  my-font text-black leading-[40px] text-4xl uppercase text-center'>we can show you the unseen</h1>
+        <div className=' w-full min-h-screen h-auto bg-cover  ' style={{ backgroundImage: `url(${newbg})` , backgroundSize : 'cover'  }}>
+            <div className=' '>
+                <div className=' '>
+                    <HomeNavbar />
+                    <div className='  mx-auto h-screen pt-40 '>
+                        <div className='  w-80 mx-7'>
+                            <h1 className=' tracking-widest w-full font-semibold   my-font text-gray-200 leading-[36px] text-4xl uppercase '>There a lot of unseens. Let's Goo!</h1>
+                            <h1 className=' uppercase text-sm mt-1 w-48 text-gray-200'>find the place you like around the world</h1>
+                        </div>
+                    </div>
                 </div>
-              
-              
+            </div>
 
-            </div>
-            </div>
-            </div>
-           
         </div>
 
 

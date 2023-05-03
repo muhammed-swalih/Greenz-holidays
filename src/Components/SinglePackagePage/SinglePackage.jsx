@@ -12,6 +12,7 @@ import axios from 'axios'
 import '../styles/shade.css'
 import Footer from '../HomepageComponets/Footer'
 import Navbar from '../Navbar'
+import HomeNavbar from '../HomeNavbar'
 function SinglePackage() {
     const { id } = useParams()
     const [details, setDetails] = useState([])
@@ -38,6 +39,8 @@ function SinglePackage() {
         return (
             <div className=' w-full min-h-screen h-auto my-font'>
                 <div className=' w-full min-h-80 h-96 bg-center bg-black  bg-cover ' style={{ backgroundImage: `url(${`data:image/jpeg;base64,${base}`})` }}>
+                    <div className='bg-gradient-to-b from-gray-300 '>
+                    <HomeNavbar/>
                     <div className=' w-full h-96 bg-gradient-to-t from-gray-900  '>
                         <div className=' w-[1150px] h-96 mx-auto flex items-end pb-5 '>
                             <div className=' flex flex-col '>
@@ -48,6 +51,7 @@ function SinglePackage() {
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
                 <div className=' w-[1150px] min-h-80 h-auto mt-10 mx-auto flex justify-between pb-10'>
@@ -64,9 +68,9 @@ function SinglePackage() {
                     <div className=' flex flex-col gap-3'>
                         <div className=' px-5 pt-5  w-[350px] h-[300px] bg-[#4D5BDA] flex flex-col gap-4 mt-[-80px] relative shadow-md'>
                             <div>
-                                <h1 className=' text-white font-bold text-xl uppercase'>highlights</h1>
+                                <h1 className=' text-white font-semibold text-xl uppercase'>highlights</h1>
                             </div>
-                            <div className=' ml-5 text-white font-semibold'>
+                            <div className=' ml-5 text-white '>
                                 <ul className=' list-disc text-sm'>
                                     {details && details.highlight1 && <li>{details ? details.highlight1 : "nothing"}</li>}
                                     {details && details.highlight2 && <li>{details ? details.highlight2 : "nothing"}</li>}

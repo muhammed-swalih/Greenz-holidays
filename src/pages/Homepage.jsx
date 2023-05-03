@@ -12,10 +12,10 @@ function Homepage() {
     <div>
         <Intro/>
         <Experience/>
-        {/* <Popular/> */}
+        <Popular/>
          <TopDestinations/>
         <Offer/>
-        {/* <Adventure/> */}
+        <Adventure/>
         <Footer/>
     </div>
   )
