@@ -18,7 +18,7 @@ const DataProvider = ({children})=>{
                 localStorage.removeItem("packages")
             }
         }
-        fetch('https://greenz-api.onrender.com/packages/getpackages')
+        fetch('https://flygreenzholidays.onrender.com/packages/getpackages')
         .then(response => response.json())
         .then(data => {
             setPackages(data);
@@ -41,7 +41,7 @@ const DataProvider = ({children})=>{
                 localStorage.removeItem("packages")
             }
         }
-        fetch('https://greenz-api.onrender.com/packages/getAd')
+        fetch('https://flygreenzholidays.onrender.com/packages/getAd')
         .then(response => response.json())
         .then(data => {
             setAds(data);

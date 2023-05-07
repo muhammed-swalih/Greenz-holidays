@@ -132,7 +132,7 @@ function Popular() {
             <div className='flex justify-center gap-3 w-32 h-auto pt-5 mx-auto'>
                     <h1 onClick={MhandleNextImage} className=' text-black bg-white px-3  py-3'><AiOutlineLeft /></h1>
                     <h1 onClick={MhandlePrevImage} className=' text-black bg-white px-3  py-3'><AiOutlineRight /></h1>
-                </div>
+            </div>
 
         </div>
     )

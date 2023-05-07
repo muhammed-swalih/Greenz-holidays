@@ -19,7 +19,7 @@ function SinglePackage() {
     const [base, setBase] = useState()
 
     const getDetails = () => {
-        axios(`https://greenz-api.onrender.com/packages/getpackages/${id}`)
+        axios(`https://flygreenzholidays.onrender.com/packages/getpackages/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

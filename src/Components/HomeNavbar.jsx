@@ -79,7 +79,7 @@ const tickets = () => {
           <img src={logo} alt="" width={130} />
         </div>
         <div>
-          <ul className='flex gap-5 mx-auto'>
+          <ul className='flex gap-5 mx-auto text-sm'>
             <li onClick={navigateHome} className='ml-3 text-black font-medium uppercase hover:underline hover:font-medium hover:text-gray-800'>Home</li>
             <li onClick={packages} className='ml-3 text-black font-medium uppercase hover:underline hover:font-medium hover:text-gray-800'>Tour Packages</li>
             <li onClick={aboutus} className='ml-3 text-black font-medium uppercase hover:underline hover:font-medium hover:text-gray-800'>About</li>
@@ -123,7 +123,7 @@ const tickets = () => {
       </div>
 
       {/* Sidebar */}
-      <div className={`fixed top-0 left-0 w-52 h-screen bg-gray-700 z-50 transition-transform duration-300 ease-in-out transform ${isSidebarOpen ? '' : '-translate-x-full'}`}>
+      <div className={` overflow-scroll fixed top-0 left-0 w-52 h-screen bg-gray-700 z-50 transition-transform duration-300 ease-in-out transform ${isSidebarOpen ? '' : '-translate-x-full'}`}>
         <ul className='pt-10 text-white my-font'>
           <li className='flex justify-center mb-10'><img src={logo} alt="" width={150} /></li>
           <li onClick={navigateHome} className='text-lg mb-2 px-6'><a href='#'>Home</a></li>

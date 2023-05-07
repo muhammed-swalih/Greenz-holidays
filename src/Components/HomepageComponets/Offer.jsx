@@ -55,9 +55,9 @@ function Offer() {
         )
     }
     return (
-        <div className=' w-full  h-auto mt-32 bg-fixed'>
+        <div className=' w-full  h-auto mt-20 bg-fixed'>
             <div className=''>
-                <h1 className=' text-center my-text text-4xl text-gray-800 w-80 mx-auto tracking-wider'>what we offer</h1>
+                <h1 className=' text-center my-text text-4xl text-black w-80 mx-auto tracking-wider'>what we offer</h1>
             </div>
         
             <div className=' flex flex-col mt-10 gap-5'>

@@ -10,7 +10,7 @@ import DataContext from '../../DataContext'
 import newmap from '../../NEW ASSETS/MOBILE HOMEPAGE/MAPBG.webp'
 import newBg from '../../FINSLE ASSETS/ad-bg.webp'
 function Adventure() {
-
+    
 
     const { ads } = useContext(DataContext)
     const handleNextImage = () => {
@@ -20,6 +20,13 @@ function Adventure() {
         document.getElementById('ads').scrollLeft += 500
     }
     const isMedium = useMediaQuery('(min-width : 1024px)')
+
+    const MhandleNextImage = () => {
+        document.getElementById('ads').scrollLeft -= 400
+    }
+    const MhandlePrevImage = () => {
+        document.getElementById('ads').scrollLeft += 400
+    }
     if (isMedium) {
         return (
             <div className=' pt-20'>
@@ -32,7 +39,7 @@ function Adventure() {
                             )
                             return (
                                 <div className='flex-shrink-0 w-[350px] h-[350px] bg-black  '>
-                                    <img className=' w-full h-full object-cover' src={`data:image/jpeg;base64,${base64String}`} alt="" />
+                                    <img className=' w-full h-full object-cover' src={`data:image/jpeg;base64,${base64String}`} alt="image" />
                                 </div>
                             )
                         })}
@@ -48,19 +55,23 @@ function Adventure() {
     return (
         <div className=' mt-10 w-full h-auto'>
             <h1 className='my-text text-gray-400 text-center text-2xl'>adventure awaits</h1>
-            <div className='w-full min-h-screen h-auto bg-cover ' style={{ backgroundImage: `url(${newBg})` , backgroundSize : 'cover' }}>
-                <div className=' py-5 flex flex-col justify-center gap-5 px-5'>
+            <div className='w-full   h-auto bg-cover ' style={{ backgroundImage: `url(${newBg})`, backgroundSize: 'cover' }}>
+                <div id='ads' className=' w-full py-5 flex   gap-5 px-5 overflow-scroll scroll-smooth'>
                     {ads.map((items) => {
                         const base64String = btoa(
                             String.fromCharCode(...new Uint32Array((items.image.data.data)))
                         )
                         return (
-                            <div className=' h-auto w-auto  mx-auto rounded-3xl ' >
-                                <img className='h-auto w-auto rounded-3xl object-cover'  src={`data:image/jpeg;base64,${base64String}`}  alt="" />
+                            <div className=' h-80 w-80  mx-auto rounded-3xl flex flex-shrink-0 ' >
+                                <img className='h-full w-full  rounded-3xl object-cover' src={`data:image/jpeg;base64,${base64String}`} alt="" />
                             </div>
                         )
                     })}
                 </div>
+                <div className='flex justify-center gap-3 w-32 h-auto py-5 mx-auto'>
+                    <h1 onClick={MhandleNextImage} className=' text-black bg-white px-3  py-3'><AiOutlineLeft /></h1>
+                    <h1 onClick={MhandlePrevImage} className=' text-black bg-white px-3  py-3'><AiOutlineRight /></h1>
+            </div>
             </div>
         </div>
     )

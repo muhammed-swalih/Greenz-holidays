@@ -17,7 +17,7 @@ function TopDestinations() {
     const isMedium = useMediaQuery('(min-width : 1024px)');
     if (isMedium) {
         return (
-            <div className=' w-[1350px] px-20 mx-auto  min-h-60 h-auto py-20 my-font'>
+            <div className=' w-[1250px] px-20 mx-auto  min-h-60 h-auto py-20 my-font'>
                 <div className=' flex flex-col '>
                     <div className=' flex justify-between'>
                         <div>
