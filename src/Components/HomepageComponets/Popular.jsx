@@ -88,7 +88,7 @@ function Popular() {
         )
     }
     return (
-        <div className=' w-full h-auto my-font mt-5 bg-cover py-2 pb-20 bg-fixed'style={{backgroundImage : `url(${bg})` , backgroundSize : 'cover'}}>
+        <div className=' w-full h-auto my-font mt-5 bg-cover py-2 pb-20 'style={{backgroundImage : `url(${bg})`  , backgroundSize : 'cover'}}>
             <div className=' pb-10 w-80 mx-auto'>
                 <h1 className=' my-font uppercase font-medium text-3xl   text-white pt-10 tracking-widest '> tour packages</h1>
                 <h1 onClick={navigatePackages} className=' text-white font-extralight mt-1 text-sm'>view all</h1>
@@ -102,7 +102,7 @@ function Popular() {
 
                         <div className='flex-shrink-0 flex flex-col w-auto h-auto py-5 bg-fixed'>
                             <div className=' h-60 w-80 bg-black'>
-                                <img className=' h-full w-full object-cover' style={{objectFit : 'fill'}} src={`data:image/jpeg;base64,${base64String}`} alt="" />
+                                <img className=' h-full w-full object-cover'  src={`data:image/jpeg;base64,${base64String}`} alt="" />
                             </div>
                             <div className=' w-80 h-auto flex flex-col justify-center bg-[#E7E7E7] shadow-xl '>
                                 <div className='flex flex-col gap- pl-5  pt-4 pb-1 h-28 overflow-hidden  w-72'>
