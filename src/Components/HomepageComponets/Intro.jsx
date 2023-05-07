@@ -15,6 +15,8 @@ import newbg from '../../FINSLE ASSETS/cutbg.webp'
 import 'typeface-poppins'
 import newdeskbg from '../../NEW ASSETS/bgdesk.webp'
 import Navbar from '../Navbar'
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+
 function Intro() {
     const navigate = useNavigate();
     const navigateHome = () => {
@@ -27,7 +29,7 @@ function Intro() {
         navigate('/contact')
     }
     const packages = () => {
-    navigate('/packages')
+        navigate('/packages')
     }
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -59,7 +61,7 @@ function Intro() {
                                             <h1 className='  text-sm'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</h1>
                                             <div className='   mt-4 text-black   w-48 border border-2 border-white h-16 hover:bg-white cursor-pointer hover:text-black  '>
                                                 <div className='flex justify-center items-center bg-white bg-opacity-30 h-full w-full hover:bg-white'>
-                                                     <h1 className='uppercase text-xl  '>book a tour</h1>
+                                                    <h1 className='uppercase text-xl  '>book a tour</h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -73,20 +75,21 @@ function Intro() {
         )
     }
     return (
-        <div className=' w-full min-h-screen h-auto bg-cover  ' style={{ backgroundImage: `url(${newbg})` , backgroundSize : 'cover'  }}>
-            <div className=' '>
+        
+            <div className=' w-full min-h-screen h-auto bg-cover ' style={{ backgroundImage: `url(${newbg})`, backgroundSize: 'cover' }}>
                 <div className=' '>
-                    <HomeNavbar />
-                    <div className='  mx-auto h-screen pt-40 '>
-                        <div className='  w-80 mx-7'>
-                            <h1 className=' tracking-widest w-full font-semibold   my-font text-gray-200 leading-[36px] text-4xl uppercase '>There a lot of unseens. Let's Goo!</h1>
-                            <h1 className=' uppercase text-sm mt-1 w-48 text-gray-200'>find the place you like around the world</h1>
+                    <div className=' '>
+                        <HomeNavbar />
+                        <div className='  mx-auto h-screen pt-40 '>
+                            <div className='  w-80 mx-7'>
+                                <h1 className=' tracking-widest w-full font-semibold   my-font text-gray-200 leading-[36px] text-4xl uppercase '>There a lot of unseens. Let's Goo!</h1>
+                                <h1 className=' uppercase text-sm mt-1 w-48 text-gray-200'>find the place you like around the world</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
+        
 
 
     )
