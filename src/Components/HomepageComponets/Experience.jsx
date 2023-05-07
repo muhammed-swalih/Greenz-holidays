@@ -8,7 +8,7 @@ function Experience() {
     if (isMedium) {       return (
             <div className=' w-full h-[400px] py-5 bg-white gap-16 flex items-center justify-center my-font px-10 '>
                 <div className=' w-[450px] h-[200px] px-5  bg-gray-800 py-5 opacity-90 shadow-2xl shadow-gray-800'>
-                    <div className=' w-full h-full flex flex-col gap-2 '>
+                    <div className=' w-full h-200 flex flex-col gap-2 '>
                         <div className=' flex items-center my-auto'>
                             <img src={booking} alt="" width={80} />
                         </div>
