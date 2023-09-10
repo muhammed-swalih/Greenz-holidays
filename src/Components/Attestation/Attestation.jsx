@@ -77,7 +77,8 @@ function Attestation() {
                   <h1 className=" text-white text-3xl">
                     <BiPhoneCall />
                   </h1>
-                  <h1 className=" text-white font-semibold">91 12365667890</h1>
+                  <h1 className=" text-white font-semibold">91 7025788113</h1>
+                  <h1 className=" text-white font-semibold">91 7025788114</h1>
                 </div>
                 <div className=" flex gap-3">
                   <h1 className=" text-white text-3xl">
@@ -140,7 +141,8 @@ function Attestation() {
             <h1 className=" text-white text-3xl">
               <BiPhoneCall />
             </h1>
-            <h1 className=" text-white font-semibold">91 1234567890</h1>
+            <h1 className=" text-white font-semibold">91 7025788113</h1>
+            <h1 className=" text-white font-semibold">91 7025788114</h1>
           </div>
           <div className="items-center flex gap-3 mt-5">
             <h1 className=" text-white text-3xl">

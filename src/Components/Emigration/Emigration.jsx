@@ -73,7 +73,8 @@ function Emigration() {
                   <h1 className=" text-white text-3xl">
                     <BiPhoneCall />
                   </h1>
-                  <h1 className=" text-white font-semibold">91 12365667890</h1>
+                  <h1 className=" text-white font-semibold">91 9846075785</h1>
+                  <h1 className=" text-white font-semibold">91 9544229813</h1>
                 </div>
                 <div className=" flex gap-3">
                   <h1 className=" text-white text-3xl">
@@ -131,7 +132,8 @@ function Emigration() {
             <h1 className=" text-white text-3xl">
               <BiPhoneCall />
             </h1>
-            <h1 className=" text-white font-semibold">91 1234567890</h1>
+            <h1 className=" text-white font-semibold">91 9846075785</h1>
+            <h1 className=" text-white font-semibold">91 9544229813</h1>
           </div>
           <div className="items-center flex gap-3 mt-5">
             <h1 className=" text-white text-3xl">
